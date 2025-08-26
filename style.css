@@ -1,0 +1,68 @@
+   .navbar { 
+      background-color: hwb(224 7% 5%); 
+      padding: 1em; 
+      position : 
+      sticky; 
+      top: 0; 
+      z-index: 1000; 
+   }
+   .nav-links { 
+      list-style: none; 
+      display: flex; 
+      justify-content: center;
+      gap: 2em;
+      margin: 0; 
+      padding: 0; 
+   }
+   .nav-links a { 
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+   }
+   .nav-links a:hover { 
+      color: #00ffd5; 
+   }
+   .logo { 
+      display: block; 
+      margin: 1em auto; 
+      width: 200px; 
+      height: auto; 
+   }
+
+   body { 
+      font-family: Arial, sans-serif; 
+      margin: 0; 
+      padding: 0; 
+      background-color: #f4f4f4; 
+   }
+
+   header { 
+      background-color: hwb(224 7% 5%); 
+      color: white; 
+      text-align: center; 
+      padding: 2em; 
+   }
+
+   h1 { 
+      margin: 0; 
+   }
+    .about { 
+      max-width: 800px; 
+      margin: 2em auto; 
+      padding: 1em;
+   }
+
+   footer { 
+      text-align: center; 
+      padding: 1em; 
+      background:hwb(224 7% 5%); 
+      color: white; 
+      position: fixed; 
+      bottom: 0; 
+      width: 100%; 
+   } 
+    
+   .email { 
+      color: #ddd;
+   }
