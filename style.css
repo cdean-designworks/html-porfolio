@@ -17,6 +17,7 @@
       top: 0; 
       z-index: 1000; 
    }
+
    .nav-links { 
       list-style: none; 
       display: flex; 
@@ -31,9 +32,11 @@
       font-weight: 500;
       transition: color 0.3s ease;
    }
+
    .nav-links a:hover { 
       color: #00ffd5; 
    }
+
    .logo { 
       display: block; 
       margin: 1em auto; 
@@ -73,3 +76,4 @@
    .email { 
       color: #ddd;
    }
+
