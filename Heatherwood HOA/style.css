@@ -14,7 +14,7 @@ margin: auto;
 }
 
 header {
-background-color: #4CAF50;
+background-color: #3c8d3f;
 color: white;
 text-align: center;
 }
@@ -26,6 +26,56 @@ margin-top: 0;
 ul {
 list-style-type: disc;
 padding-left: 20px;
+}
+
+.container {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.calendar, .events {
+background: #fff;
+padding: 15px;
+border: 1px solid #ddd;
+width: 100%;
+max-width: 380px;
+}
+
+.calendar-grid {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+text-align: center;
+}
+
+.calendar-grid div {
+padding: 8px;
+border: 1px solid #eee;
+}
+
+.calendar-grid .header {
+background: #4a4a4a;
+color: #fff;
+}
+
+.calendar-grid .today {
+background: #3c8d3f;
+color: #fff;
+}
+
+.event {
+ margin-bottom: 10px;
+}
+
+.event h3 {
+margin: 0;
+color: #295f2c;
+}
+
+@media (max-width: 600px) {
+.calendar, .events {
+width: 100%;
+    }
 }
 
 footer {
