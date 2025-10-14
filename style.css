@@ -80,11 +80,13 @@ font-weight: 300;
 
 /* Portfolio Section */
 .about {
-margin-top: 20px;
+width: 100%;
+max-width: 100%;
+box-sizing: border-box;
 font-size: 1.3rem;
 color: #3d2946;
 line-height: 1.6;
-text-align: center;
+text-align:left
 padding: 0px 100px;
 margin-bottom: 60px;
 }
@@ -242,3 +244,4 @@ grid-template-columns: 1fr;
 font-size: 1.8rem;
     }
 }
+
