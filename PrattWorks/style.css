@@ -1,109 +1,144 @@
-* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Georgia', serif;
-            background-color: #f8f5f2;
-            color: #4a3f35;
-            line-height: 1.6;
-        }
-        header {
-            background: url('https://img.freepik.com/premium-photo/cozy-small-workshop-with-handmade-candles-soap-shelves-filled-with-colorful-artisan-products-rustic-packaging_128711-45027.jpg') no-repeat center center/cover;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            position: relative;
-        }
-        header::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(74, 63, 53, 0.6);
-        }
-        header h1 {
-            font-size: 4rem;
-            z-index: 1;
-        }
-        header p {
-            font-size: 1.5rem;
-            z-index: 1;
-            margin-top: 1rem;
-        }
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        #about {
-            background-color: #fffaf5;
-            text-align: center;
-        }
-        #about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            color: #8b6f47;
-        }
-        #products h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 3rem;
-            color: #8b6f47;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-        .product-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-10px);
-        }
-        .product-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-        .product-info {
-            padding: 1.5rem;
-        }
-        .product-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
-        .product-info p {
-            margin-bottom: 1rem;
-            color: #666;
-        }
-        .price {
-            font-size: 1.4rem;
-            font-weight: bold;
-            color: #8b6f47;
-        }
-        footer {
-            background-color: #4a3f35;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            font-size: 1rem;
-        }
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 3rem;
-            }
-            header p {
-                font-size: 1.2rem;
-            }
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fdfaf7;
+      color: #30261d;
+      line-height: 1.6;
+    }
+
+    /* Hero Section – high-traffic eye-catcher */
+    .hero {
+      background:#3f1515 url('images/hero-bg.jpg') no-repeat center center/cover;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 4.2rem;
+      text-shadow: 2px 2px 8px #00000099;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.6rem;
+      max-width: 700px;
+      text-shadow: 1px 1px 6px #00000080;
+    }
+
+    /* Products Section */
+    .products {
+      padding: 5rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .products h2 {
+      font-size: 3rem;
+      color: #301d1d;
+      margin-bottom: 1.5rem;
+      letter-spacing: 1px;
+    }
+
+    .products p.intro {
+      font-size: 1.3rem;
+      color: #301d1d;
+      max-width: 800px;
+      margin: 0 auto 3rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Exactly 2 columns side-by-side */
+      }
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px #0000001f;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .product-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 15px 40px #0000002e;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-bottom: 4px solid #e8d9c1;
+    }
+
+    .info {
+      padding: 1.8rem 1.5rem;
+    }
+
+    .info h3 {
+      font-size: 1.9rem;
+      color: #301d1d;
+      margin-bottom: 0.8rem;
+    }
+
+    .info p {
+      font-size: 1.05rem;
+      color: #301d1d;
+      margin-bottom: 1rem;
+    }
+
+    .price {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #301d1d;
+      margin-bottom: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #301d1d;
+      color: white;
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #301d1dbe;
+    }
+
+    footer {
+      background: #30261d;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 767px) {
+      .hero h1 { font-size: 3rem; }
+      .hero p  { font-size: 1.3rem; }
+      .products h2 { font-size: 2.4rem; }
+    }
