@@ -50,56 +50,31 @@
 
   <section>
        <h1>HOA Upcoming Events and Meetings</h1>
-    <div class="container">
+    <div class="side-by-side">
         <!-- Calendar -->
         <div class="calendar">
-            <h2>October 2025</h2>
-            <div class="calendar-grid">
-                <div class="header">Sun</div>
-                <div class="header">Mon</div>
-                <div class="header">Tue</div>
-                <div class="header">Wed</div>
-                <div class="header">Thu</div>
-                <div class="header">Fri</div>
-                <div class="header">Sat</div>
-                <div></div>
-                <div></div>
-                <div></div> 
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
-                <div>11</div>
-                <div>12</div>
-                <div>13</div>
-                <div>14</div>
-                <div>15</div>
-                <div>16</div>
-                <div>17</div>
-                <div>18</div>
-                <div>19</div>
-                <div>20</div>
-                <div>21</div>
-                <div>22</div>
-                <div>23</div>
-                <div>24</div>
-                <div>25</div>
-                <div class="today">26</div>
-                <div>27</div>
-                <div>28</div>
-                <div>29</div>
-                <div>30</div>
-                <div></div>
-            </div>
+  <div class="header">
+    <button onclick="prevMonth()">← Prev</button>
+    <h2 id="month-year"></h2>
+    <button onclick="nextMonth()">Next →</button>
+  </div>
+  
+  <div class="days" id="weekdays">
+    <div class="day-name">Sun</div>
+    <div class="day-name">Mon</div>
+    <div class="day-name">Tue</div>
+    <div class="day-name">Wed</div>
+    <div class="day-name">Thu</div>
+    <div class="day-name">Fri</div>
+    <div class="day-name">Sat</div>
+  </div>
+  
+  <div class="days" id="dates"></div>
         </div>
+      
+    
         <!-- Events List -->
-        <div class="events">
+        <div class="events-box">
             <h2>Upcoming Events</h2>
             <div class="event">
                 <h3>HOA Board Meeting</h3>
@@ -115,6 +90,8 @@
             </div>
         </div>
     </div>
+  </div>
+  </div>
   </section>
 
   <section>
@@ -128,7 +105,7 @@
   <footer>
     &copy; 2025 Heatherwood HOA. All rights reserved.
   </footer>
-    
+ <script src="index.js"></script>   
 </body>
 
 </html>
