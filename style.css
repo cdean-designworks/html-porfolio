@@ -69,6 +69,7 @@ font-size: 3rem;
 font-weight: 700;
 margin-bottom: 15px;
 letter-spacing: 1px;
+text_align: center;
 }
 
 .hero p {
@@ -244,3 +245,4 @@ grid-template-columns: 1fr;
 font-size: 1.8rem;
     }
 }
+
